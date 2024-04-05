@@ -16,6 +16,11 @@ services:
       DATA_DIR: '/data/tmp'
       NODE_ENV: 'production'
       REDIS_HOST: 'redis'
+      ALLOW_REGISTRATION: 'true'
+      SMTP_HOST: ''
+      SMTP_PORT: 465
+      SMTP_USERNAME: 'm.huda@software-developer.id'
+      SMTP_PASSWORD: ''
     ports:
       - '3000:3000'
     depends_on:
